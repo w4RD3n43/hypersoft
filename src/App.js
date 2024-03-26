@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Border from './components/Border';
+import image from './assets/profile-user-svgrepo-com.svg'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="relative w-screen h-screen bg-gradient-to-r from-pink-200 to-purple-300">
+      <div className="absolute top-5 left-3 lg:left-16" >
+        <h1 className="font-sans text-3xl font-bold cursor-pointer " >
+          Task Board
+        </h1>
+      </div>
+      <div className="absolute top-5 right-5 lg:right-32 " >
+        <img src={image} alt="" width={40} className='cursor-pointer' />
+      </div>
+      <Border/>
     </div>
   );
 }
