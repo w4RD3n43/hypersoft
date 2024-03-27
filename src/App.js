@@ -1,8 +1,14 @@
 import Border from './components/Border';
 import image from './assets/profile-user-svgrepo-com.svg'
+import TodoItem from './components/TODO/TodoItem';
+import { useContext } from 'react';
+import { AppContext } from './context/AppContext';
 
 
 function App() {
+
+  const {AddTodo} = useContext(AppContext)
+
   return (
     <div className="relative w-screen h-screen bg-gradient-to-r from-pink-200 to-purple-300">
       <div className="absolute top-5 left-3 lg:left-16" >
@@ -14,6 +20,9 @@ function App() {
         <img src={image} alt="" width={40} className='cursor-pointer' />
       </div>
       <Border/>
+      { AddTodo &&
+        <TodoItem/>
+      }
     </div>
   );
 }

@@ -2,8 +2,8 @@ import React from 'react'
 
 const Filter = () => {
   return (
-    <div className='absolute p-3 md:flex ' >
-      <p className='m-3 font-semibold' >
+    <div className='p-3 md:h-20 md:flex' >
+      <p className='m-4 font-semibold' >
         Filter By:  
       </p>
       <div className='flex items-center justify-around' >

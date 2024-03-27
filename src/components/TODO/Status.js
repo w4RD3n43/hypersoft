@@ -1,11 +1,11 @@
 import React from 'react'
 
-const TodoCards = () => {
+const Status = () => {
   return (
     <div>
-      
+      hello
     </div>
   )
 }
 
-export default TodoCards
+export default Status
